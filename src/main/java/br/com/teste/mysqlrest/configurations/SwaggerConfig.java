@@ -15,7 +15,7 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("br.com.teste.mysqlrest.external.exposes.rest.controller"))
+                .apis(RequestHandlerSelectors.basePackage("br.com.teste.mysqlrest.external.rest.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
